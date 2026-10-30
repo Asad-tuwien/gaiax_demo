@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""
-Minimal local server for the front end (standard library only).
-
-    python server.py            # then open http://127.0.0.1:8000
-
-Serves ./frontend and exposes POST /api/check (raw JSON file as request body).
-dpp_checker.py is used unchanged.
-"""
 import json
 import os
 import tempfile

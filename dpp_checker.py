@@ -1,21 +1,3 @@
-#!/usr/bin/env python3
-"""
-dpp_checker.py - Compliance checker for AAS JSON files carrying DPP metadata.
-
-Validation layers (kept separate; a file may pass one and fail another):
-  1. JSON            - readable, syntactically valid JSON, root is an object
-  2. AAS structure   - lightweight structural checks (NOT a full AAS schema
-                       validation unless a JSON schema file is supplied)
-  3. IDTA 02099-1    - DppMetadata submodel, v1.0 (28.05.2026)
-  4. EN 18223 / 18219 - identifier formats. NOT IMPLEMENTED by default: the
-                       standard texts were not available to the implementer.
-                       Pluggable via CheckerConfig.identifier_validators.
-
-Python standard library only (optional: `jsonschema` for --aas-schema).
-
-This tool is *compatible with* the stated specifications for the rules it
-implements. It is NOT a certification tool. See README.md for coverage.
-"""
 from __future__ import annotations
 
 import argparse

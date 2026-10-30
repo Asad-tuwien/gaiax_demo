@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""
-End-to-end demonstration. Generates synthetic fixtures in ./fixtures/, then
-loads each from disk, runs the checks and prints the reports.
-No network access; standard library only.
-
-    python demo.py            # compact reports
-    python demo.py -v         # include details and sources for every check
-"""
 import copy
 import json
 import sys
